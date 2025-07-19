@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ki az Imposztor?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ki az Imposztor?</h1>
+    <label>Hány játékos? (3-10)</label>
+    <input type="number" id="playerCount" min="3" max="10" value="5" />
+    <button onclick="startGame()">Játék indítása</button>
+    <div id="game"></div>
+    <button onclick="revealImpostor()" id="revealBtn" style="display:none;">Felfedés</button>
+    <button onclick="location.reload()" style="display:none;" id="newGameBtn">Új játék</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
